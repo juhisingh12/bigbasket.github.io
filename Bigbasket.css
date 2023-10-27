@@ -401,7 +401,7 @@ fo :focus{
 }
 
 
-@media only screen and (max-width:430px)
+@media (max-width:430px) and (min-width:300px)
 {
     #Heading-Container{
         /* border: 2px solid red; */
@@ -454,6 +454,7 @@ input[type='text']{
     color:white ;
     margin-top: 10%;
     border-radius: 8px;
+    display: none;
 }
 #basket_img{
     /* border: 2px solid rgb(248, 244, 244); */
@@ -503,9 +504,10 @@ input[type='text']{
 }
 
 #offer-nav{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     margin-top:8px;
     margin-right: 5px;
+    display: none;
 }
 
 main{
