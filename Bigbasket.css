@@ -914,6 +914,7 @@ br{
 #cloned{
     /* border: 2px solid red; */
     width: 100%;
+    display: block;
     text-align: center;
     font-size: 25px;
     color: brown;
