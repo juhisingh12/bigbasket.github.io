@@ -1,0 +1,927 @@
+*{
+    padding: 0px;
+    margin: 0%;
+    
+}
+#Heading-Container{
+    border:2px solid rgb(242, 234, 234);
+}
+
+#First_nav{
+    border: 1px solid rgb(239, 236, 236);
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+#bigbasket_logo{
+    /* border: 2px solid rgb(245, 237, 237); */
+    height: 100px;
+    width: 150px;
+} 
+
+input[type='text']{
+    border: 3px solid rgb(251, 243, 243);
+    width: 500px;
+    height: 40px;
+    caret-color: red;
+    color: blueviolet;
+    margin: 25px;
+
+}
+
+#select_location{
+    border: 3px solid rgb(247, 241, 241);
+    width:200px;
+    height:40px;
+    margin:25px;
+}
+
+#login_sign_up{
+    border: 3px solid rgb(235, 229, 229);
+    width:100px;
+    height:40px;
+    background-color: black;
+    color:white ;
+    margin: 25px;
+    border-radius: 8px;
+}
+
+#basket_img{
+    border: 2px solid rgb(248, 244, 244);
+    height: 50px;
+    width: 150px;
+    margin-top: 15px; 
+}
+
+
+
+#Second_nav{
+    border: 2px solid rgb(240, 234, 234);
+    /* border: none; */
+     margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+#drop_down{
+    height: 35px;
+    width: 200px;
+    background-color: rgb(81, 168, 81);
+    color: white;
+    font-size: 20px;
+    border: 3px solid rgb(243, 238, 238);
+    border-radius: 8px;
+}
+
+#product-name-nav{
+    margin-top: 8px;
+
+}
+
+.product-name{
+    text-decoration: none;
+    color: black;
+}
+
+#offer-nav{
+    margin-top:8px;
+}
+
+main{
+     margin-left: 10%;
+     margin-right: 10%;
+      /* border: 2px solid black; */
+}
+
+#main_img{
+    border: 2px solid rgb(253, 248, 248);
+    height: 400px;
+    width: 1185px; 
+    border-radius: 20px;
+}
+
+#third-nav{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 100%;
+
+}
+.third-nav-img{
+    height: 50px;
+    width:150px;
+    border: 3px solid rgb(247, 240, 240);
+    border-radius: 10px;
+}
+
+.head-smart{
+    font-size: 30px;
+}
+.show-more{
+    margin-left: 70%;
+    font-size: 20px;
+    margin-top: 8px;
+    border: 3px solid rgb(250, 241, 241);
+    border-radius: 10px;
+}
+
+.Smart-baket{
+    display: flex;
+}
+.veg-box{
+    /* border: 3px solid black; */
+    display: flex;
+
+}
+
+.product{
+    border: 3px solid rgb(245, 241, 241);
+    border-radius: 10px ;
+}
+.Vagetables{
+    border: 3px solid rgb(250, 244, 244);
+    display: flex;
+    height: 150px;
+    width: 200px;
+    margin: 46px;
+    border-radius: 15px;
+}
+
+.cap-car-cor-cuc{
+    margin-left: 50px;
+    /* border: 4px solid rgb(247, 241, 241); */
+    
+}
+
+#fifth-nav{
+    border: 3px solid rgb(253, 248, 248);
+    border-radius: 10px;
+    
+}
+#BANK{
+    display: flex;
+}
+
+.bank-offer{
+    border: 3px solid rgb(254, 251, 251);
+    border-radius: 10px;
+    margin: 40px;
+    height: 180px;
+    width: 220px;
+}
+
+.head-seller{
+    font-size: 30px;
+}
+
+.Best-Seller{
+    display: flex;
+}
+
+.veg-box2{
+    /* border: 3px solid rgb(246, 241, 241); */
+    border-radius: 10px ;
+    display: flex;
+}
+
+.Vagetables2{
+    border: 5px solid rgb(252, 249, 249);
+    border-radius: 10px ;
+    display: flex;
+    height: 150px;
+    width: 200px;
+    margin: 46px;
+}
+
+.on-car-to-la{
+    margin-left: 80px;
+    
+}
+
+#OFFER{
+    border: 5px solid rgb(248, 244, 244);
+    border-radius: 20px;
+    display: flex;
+}
+
+.Top-offer{
+    border: 4px solid rgb(250, 243, 243);
+    border-radius: 10px;
+    margin: 30px;
+    height: 180px;
+    width: 220px;
+}
+
+#fruits_vetetables{
+    border: 3px solid rgb(246, 241, 241);
+    border-radius: 10px;
+    display: flex;
+}
+
+.vg{
+    border: 3px solid rgb(248, 244, 244);
+    border-radius: 10px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+#Your-daily{
+    display: flex;
+    border: 3px solid rgb(252, 248, 248);
+    border-radius: 10px ;
+}
+
+.y-d{
+    border: 3px solid rgb(250, 248, 248);
+    border-radius: 10px;
+    margin:20px ;
+    height: 100px;
+    width: 150px;
+}
+
+#beverages{
+    display: flex;
+    border: 3px solid rgb(255, 253, 253);
+    border-radius: 10px;
+}
+
+.B{
+    border: 3px solid rgb(248, 243, 243);
+    border-radius: 10px;
+    margin:20px ;
+    height: 100px;
+    width: 150px;
+}
+#snack{
+    border: 3px solid rgb(247, 243, 243);
+    border-radius: 10px;
+    display: flex;
+}
+
+.ss{
+    border: 3px solid rgb(249, 247, 247);
+    border-radius: 10px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+
+#cleaning{
+    display: flex;
+    border: 3px solid rgb(251, 249, 249);
+    border-radius: 10px;
+}
+
+.ch{
+    border: 3px solid rgb(244, 241, 241);
+    border-radius: 10px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+
+#beauty{
+    display: flex;
+    border: 3px solid rgb(252, 247, 247);
+    border-radius:10px ;
+}
+.Bh{
+    border: 3px solid rgb(252, 250, 250);
+    border-radius: 10px;
+    margin:20px ;
+    height: 100px;
+    width: 150px;
+}
+
+#Home{
+    border: 3px solid rgb(255, 253, 253);
+    border-radius: 10px;
+    display: flex;
+}
+.hk{
+    border: 3px solid rgb(250, 248, 248);
+    border-radius: 10px;
+    margin:20px ;
+    height: 100px;
+    width: 150px;
+}
+#daily{
+    border: 3px solid rgb(252, 247, 247);
+    border-radius: 10px;
+    display: flex;
+}
+
+.dv{
+    border: 3px solid rgb(253, 250, 250);
+    border-radius: 10px;
+    margin:40px ;
+    height: 180px;
+    width: 220px;
+}
+
+#bakery{
+    border: 3px solid rgb(247, 241, 241);
+    border-radius: 15px;
+    display: flex;
+}
+
+.bs{
+    border: 3px solid rgb(250, 246, 246);
+    border-radius: 15px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+
+#personal-care{
+    border: 3px solid rgb(246, 242, 242);
+    border-radius: 15px;
+    display: flex;
+}
+
+.pc{
+    border: 3px solid rgb(252, 249, 249);
+    border-radius: 15px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+
+#store{
+    border: 3px solid rgb(247, 246, 246);
+    border-radius: 15px;
+    display: flex;
+}
+
+.gs{
+    border: 3px solid rgb(253, 250, 250);
+    border-radius: 15px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+
+
+#tea{
+    border: 3px solid rgb(255, 252, 252);
+    border-radius: 15px;
+    height:500px ;
+    width: 1100px;
+    margin-left: 35px;
+}
+
+#Brand{
+    border: 3px solid rgb(250, 247, 247);
+    border-radius: 15px;
+    display: flex;
+}
+
+.store{
+    border: 3px solid rgb(253, 248, 248);
+    border-radius: 15px ;
+    margin:20px ;
+    height: 100px;
+    width: 150px;
+
+}
+
+.foot{
+    width: 33.3%;
+    line-height: 30px;
+}
+
+.foot1{
+    width: 16.6%;
+}
+fo :focus{
+    background-color: red;
+}
+#cloned{
+    display: none;
+}
+
+
+@media only screen and (max-width:430px)
+{
+    #Heading-Container{
+        /* border: 2px solid red; */
+        width: 100%;
+    /* border:2px solid rgb(242, 234, 234); */
+}
+
+#First_nav{
+    border: 1px solid rgb(239, 236, 236);
+    /* border: 2px solid blue; */
+    width: 100%;
+    margin-left:0%;
+    margin-right:0%;
+    display: flex;
+    height: 65px;
+}
+
+#bigbasket_logo{
+    border: 2px solid rgb(245, 237, 237);
+    border:none;
+    margin-top: 25%;
+    height:30px;
+    width:50px;
+} 
+
+input[type='text']{
+    border: 3px solid rgb(251, 243, 243);
+    width: 200px;
+    height: 40px;
+    margin-top: 5%;
+    caret-color: red;
+    color: blueviolet;
+
+}
+
+#select_location{
+    border: 3px solid rgb(247, 241, 241);
+    width:200px;
+    height:40px;
+    margin:25px;
+    display: none;
+}
+
+#login_sign_up{
+    /* border: 3px solid rgb(235, 229, 229); */
+    border:none;
+    width:70px;
+    height:40px;
+    background-color: black;
+    color:white ;
+    margin-top: 10%;
+    border-radius: 8px;
+}
+#basket_img{
+    /* border: 2px solid rgb(248, 244, 244); */
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 150px;
+    margin-top: 15px; 
+    display: none;
+}
+
+
+
+#Second_nav{
+    border:none;
+    /* border: 2px solid rgb(240, 234, 234); */
+    height: 120px;
+    width: 100%;
+    margin-left:0%;
+    margin-right:0%;
+    padding-top: 5%;
+    display: flex;
+}
+#drop_down{
+    border:none;
+    height: 35px;
+    width: 120px;
+    margin-left: 10px;
+    background-color: rgb(81, 168, 81);
+    color: white;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+#product-name-nav{
+    /* border: 2px solid red; */
+    margin-top: 8px;
+}
+
+.product-name{
+    /* border: 2px solid blue; */
+    text-decoration: none;
+    color: black;
+}
+#f-v{
+    /* border: 2px solid red; */
+    display: none;
+}
+
+#offer-nav{
+    /* border: 2px solid red; */
+    margin-top:8px;
+    margin-right: 5px;
+}
+
+main{
+     margin-left:0%;
+     margin-right:0%;
+     width: 100%;
+     /* border: 2px solid black; */
+}
+
+#main_img{
+    border:none;
+    height: 250px;
+    width:100%; 
+    border-radius: 20px;
+}
+
+#third-nav{
+    display: flex;
+    width: 100%;
+    border:none;
+}
+.third-nav-img{
+    border:none;
+    height:20px;
+    width:50px;
+    /* border: 3px solid rgb(247, 240, 240); */
+    border-radius: 10px;
+}
+
+.head-smart{
+    border: 2px solid blue ;
+    font-size: 20px;
+    display: none;
+}
+/* .mob-img{
+    display: none;
+} */
+.show-more{
+    margin-left: 70%;
+    font-size: 20px;
+    margin-top: 8px;
+    border: 3px solid rgb(250, 241, 241);
+    border-radius: 10px;
+}
+
+.Smart-baket{
+    /* border: 2px solid red; */
+    display: flex;
+    display: none;
+}
+.veg-box{
+    border:none;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+
+}
+
+.product{
+    border: 1px solid rgb(245, 241, 241);
+    /* border: 2px solid red; */
+    width: 100%;
+    border-radius: 10px ;
+}
+.Vagetables{
+    border: none;
+     /* border: 2px solid blue; */
+    display: flex;
+    height: 150px;
+    width: 200px;
+    margin: 46px;
+    border-radius: 15px;
+}
+
+.cap-car-cor-cuc{
+    /* border: 2px solid blue; */
+    margin-left: 50px;
+    
+}
+
+#fifth-nav{
+    /* border: 2px solid blue; */
+    border: 3px solid rgb(253, 248, 248);
+    border-radius: 10px;
+    
+}
+#BANK{
+    /* border: 2px solid red; */
+    display: flex;
+    overflow-x: scroll;
+}
+
+.bank-offer{
+    border: 3px solid rgb(254, 251, 251);
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    margin: 40px;
+    height: 180px;
+    width: 220px;
+}
+
+.head-seller{
+    /* border: 2px solid red; */
+    font-size: 30px;
+}
+
+.Best-Seller{
+    /* border:2px solid red; */
+    display: flex;
+    
+}
+
+.veg-box2{
+    /* border: 2px solid red; */
+    /* border: 3px solid rgb(246, 241, 241); */
+    border-radius: 10px ;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.Vagetables2{
+    border:none;
+    /* border:2px solid red; */
+    border-radius: 10px ;
+    display: flex;
+    height: 150px;
+    width: 200px;
+    margin: 46px;
+}
+
+.on-car-to-la{
+    /* border:2px solid red; */
+    margin-left: 50px;
+    
+}
+
+#OFFER{
+    border:none;
+    /* border:2px solid red; */
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.Top-offer{
+    border: none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    margin: 30px;
+    height: 180px;
+    width: 220px;
+}
+
+#fruits_vetetables{
+    border: none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.vg{
+    border:none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+#Your-daily{
+    /* border:2px solid red; */
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    border: none;
+    border-radius: 10px ;
+}
+
+.y-d{
+    border:none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    margin:20px ;
+    height: 100px;
+    width: 150px;
+}
+
+#beverages{
+    border: none;
+    /* border:2px solid red; */
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    border-radius: 10px;
+}
+
+.B{
+    border:none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    margin:20px ;
+    height: 100px;
+    width: 150px;
+}
+#snack{
+    border:none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.ss{
+    border: none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+
+#cleaning{
+    border:none;
+    /* border:2px solid red; */
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    border-radius: 10px;
+}
+
+.ch{
+    border: none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+
+#beauty{
+    border:none;
+    /* border:2px solid red; */
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    border-radius:10px ;
+}
+.Bh{
+    border: none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    margin:20px ;
+    height: 100px;
+    width: 150px;
+}
+
+#Home{
+    border:none;
+    /* border:2px solid red; */
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    overflow-x: scroll;
+}
+.hk{
+    border: none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    margin:20px ;
+    height: 100px;
+    width: 150px;
+}
+#daily{
+    border:none;
+    /* border:2px solid red; */
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.dv{
+    border:none;
+    /* border:2px solid red; */
+    border-radius: 10px;
+    margin:40px ;
+    height: 180px;
+    width: 220px;
+}
+
+#bakery{
+    border:none;
+    /* border:2px solid red; */
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.bs{
+    border:none;
+    /* border:2px solid red; */
+    border-radius: 15px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+
+#personal-care{
+    border: none;
+    /* border:2px solid red; */
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.pc{
+    border: none;
+    /* border:2px solid red; */
+    border-radius: 15px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+
+#store{
+    border: none;
+    /* border:2px solid red; */
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gs{
+    border:none;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    margin:30px ;
+    height: 180px;
+    width: 220px;
+}
+
+
+#tea{
+    border: none;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    height:300px ;
+    width: 95%;
+    padding-left: 10px;
+    margin-left:2px;
+}
+
+#Brand{
+    border:none;
+    /* border: 2px solid red; */
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    overflow-x: scroll;
+
+}
+
+.store{
+    /* border: 3px solid rgb(253, 248, 248); */
+    /* border: 2px solid red; */
+    border-radius: 15px ;
+    margin:20px ;
+    height: 70px;
+    width: 80px;
+
+}
+
+.foot{
+    /* border: 2px solid red; */
+    width: 16.6%;
+    display: none;
+}
+fo :focus{
+    background-color: red;
+}
+#mob-footer{
+    border: none;
+    width: 100%;
+    padding-bottom: 5%;
+    /* margin: 50px; */
+    
+}
+#mob-footer2{
+    /* border: 2px solid red; */
+    padding-left: 10px;
+    width: 100%;
+    display: none;
+}
+br{
+    display: none;
+}
+#cloned{
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: brown;
+    font-weight: 900;
+    font-style: italic;
+    padding-bottom: 5%;
+}
+
+
+
+}
+
+

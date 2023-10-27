@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Grocery Shopping and online supermarket in india-bigbasket </title>
+     <link rel="stylesheet" href="./Bigbasket.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="shortcut icon" href="./bb.png" type="image/x-icon">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+</head>
+<body>
+    <header id="Heading-Container">
+        <div id="First_nav">
+                <div>
+                    <img  id="bigbasket_logo" src="data:image/png;base64,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
+                    QaGNfBqG2oih1m4cgx5ZMkTG/+gfiSSN4uj/D3PcBbHMJ7DdAAAAAElFTkSuQmCC" alt="">
+                </div> 
+
+                <div>
+                    <input id="input_search" type="text" placeholder="Search for products.....">
+                </div>
+                      
+
+                <div>
+                    <button  id="select_location">  <i class='bx bxs-compass'></i>Select Location</button>
+                </div>
+
+                <div>
+                    <button  id="login_sign_up">Login/Sign <br> Up</button>
+                </div>
+
+                <div id="basket_img">
+                     <img  src="./Screenshot 2023-09-15 220126.png" alt="">
+                </div>
+        </div>
+
+
+
+     <div id="Second_nav">
+        <div>
+            <button id="drop_down">Shop by category <i class='bx bx-down-arrow'></i></button>
+        </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div id="product-name-nav" >
+            <a class="product-name" href="">Exotic Fruits & V....</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="product-name" href="">Tea</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            
+            <a class="product-name" href="">Ghee</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="product-name" href="">Nandini</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a id="f-v" class="product-name" href="">Fresh Vegetables <button>>></button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div id="offer-nav">
+            <button> <i style="color: green;" class='bx bxs-offer'></i>Offer</button>
+        </div>
+     </div>
+    </header><br><br>
+    <main>
+        <div>
+            <div><img id="main_img" src="./img.jfif" alt=""></div> <br>
+            <div id="third-nav">
+                <div><img src="./1.webp" alt="" class="third-nav-img"></div>
+                <div><img src="./2.webp" alt="" class="third-nav-img"></div>
+                <div><img src="./3.webp" alt=""class="third-nav-img"></div>
+                <div><img src="./4.webp" alt=""class="third-nav-img"></div>
+                <div><img src="./5.webp" alt=""class="third-nav-img"></div>
+                <div><img src="./6.webp" alt=""class="third-nav-img"></div>
+            </div>
+        </div> <br><br><br>
+
+        <div id="fourth-nav">
+                <div class="Smart-baket">
+                    <div><span class="head-smart">My Smart Basket</span></div>
+                    <div class="show-more">Show More <button> < </button>&nbsp; <button> > </button></div>
+                </div>
+              <div class="veg-box">
+                <div  class="product">
+                    <div class="">
+                         <img class="Vagetables" src="./capsicum.webp" alt="">
+                    </div>
+                    <div class="cap-car-cor-cuc">
+                        <span>Fresho <br> Capsicum-Green(Loose)</span> <br><br><br>
+                        <input list="weight" placeholder="1kg">
+                        <datalist id="Weight">
+                            <option value="1Kg">1Kg</option>
+                            <option value="2Kg">2Kg</option>
+                            <option value="3Kg">3kg</option>
+                        </datalist><br><br>
+                        <b>₹52</b><strike>₹90</strike><br><br>
+                        <input list="" placeholder="Hr Din Sasta!">
+                        <datalist id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </datalist><br><br>
+                        <button><i class='bx bx-bookmark'></i></button>
+                        <button style="color: red;width: 140px;">ADD</button>   
+                    </div>
+               </div>
+
+               <div  class="product">
+                  <div>
+                    <img class="Vagetables" src="./carrot.webp" alt="">
+                 </div>
+                  <div class="cap-car-cor-cuc">
+                    <span>Fresho <br> Carrot-Orange(Loose)</span><br><br><br>
+                    <input list="weight" placeholder="1kg">
+                        <datalist id="Weight">
+                            <option value="1Kg">1Kg</option>
+                            <option value="2Kg">2Kg</option>
+                            <option value="3Kg">3kg</option>
+                        </datalist><br><br>
+                        <b>₹42</b><strike>₹68</strike><br><br>
+                        <input list="" placeholder="Hr Din Sasta!">
+                        <datalist id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </datalist><br><br>
+                        <button><i class='bx bx-bookmark'></i></button>
+                        <button style="color: red;width: 140px;">ADD</button>
+                  </div>
+               </div>
+
+                <div  class="product">
+                    <div>
+                        <img class="Vagetables"src="./coriander.webp" alt="">
+                    </div>
+                    <div class="cap-car-cor-cuc">
+                        <span>Fresho <br>Coriander-Leaves</span><br><br><br>
+                        <input list="weight" placeholder="1kg">
+                        <datalist id="Weight">
+                            <option value="1Kg">1Kg</option>
+                            <option value="2Kg">2Kg</option>
+                            <option value="3Kg">3kg</option>
+                        </datalist><br><br>
+                        <b>₹181.04</b><strike>₹248</strike><br><br><br><br>
+                        <button><i class='bx bx-bookmark'></i></button>
+                        <button style="color: red;width: 140px;">ADD</button>
+                    </div>
+                 </div>
+            
+                 <div  class="product">
+                    <div>
+                    <img class="Vagetables"src="./cucumber.webp" alt="">
+                    </div>
+                    <div class="cap-car-cor-cuc">
+                        <span>Fresho <br>Cucumber</span><br><br><br>
+                        <input list="weight" placeholder="10kg">
+                        <datalist id="Weight">
+                            <option value="1Kg">1Kg</option>
+                            <option value="2Kg">2Kg</option>
+                            <option value="3Kg">3kg</option>
+                        </datalist><br><br>
+                        <b>₹490</b><br><br><br><br>
+                        <button><i class='bx bx-bookmark'></i></button>
+                        <button style="color: red;width: 140px;">ADD</button>
+                    </div>
+                </div>
+              </div>
+        </div><br>
+
+
+
+        <div id="fifth-nav">
+             <span><b style="margin-left: 10px; font-size: 30px;">Bank Offers</b></span> 
+            <div  id="BANK">
+               
+                <div><img class="bank-offer" src="./B-O1.webp" alt=""></div>
+                <div><img class="bank-offer"src="./B-O2.webp" alt=""></div>
+                <div> <img class="bank-offer"src="./B-O3.webp" alt=""></div>
+                <div> <img class="bank-offer"src="./B-O4.webp" alt=""></div>
+            </div>
+        </div>
+
+        <div id="six-nav">
+                <div class="Best-seller">
+                    <div><span class="head-seller">Best-Sellers</div>
+                </div>
+
+                <div class="veg-box2">
+                <div class="product">
+                    <div class="">
+                         <img class="Vagetables2" src="./onion.webp" alt="">
+                    </div>
+                    <div class="on-car-to-la">
+                        <span>Fresho <br> Onion(Loose)</span> <br><br><br>
+                        <input list="weight" placeholder="5kg">
+                        <datalist id="Weight">
+                            <option value="1Kg">1Kg</option>
+                            <option value="2Kg">2Kg</option>
+                            <option value="3Kg">3kg</option>
+                        </datalist><br><br>
+                        <b>₹180</b><strike>₹301.37</strike><br><br>
+                        <input list="" placeholder="Hr Din Sasta!">
+                        <datalist id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </datalist><br><br>
+                        <button><i class='bx bx-bookmark'></i></button>
+                        <button style="color: red;width: 140px;">ADD</button>   
+                    </div>
+               </div>
+            <div class="product">
+                <div>
+                    <img class="Vagetables2" src="./carrot.webp" alt="">
+                 </div>
+                  <div class="on-car-to-la">
+                    <span>Fresho <br> Carrot-Orange(Loose)</span><br><br><br>
+                    <input list="weight" placeholder="500g">
+                        <datalist id="Weight">
+                            <option value="1Kg">1Kg</option>
+                            <option value="2Kg">2Kg</option>
+                            <option value="3Kg">3kg</option>
+                        </datalist><br><br>
+                        <b>₹21</b><strike>₹35</strike><br><br>
+                        <input list="" placeholder="Hr Din Sasta!">
+                        <datalist id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </datalist><br><br>
+                        <button><i class='bx bx-bookmark'></i></button>
+                        <button style="color: red;width: 140px;">ADD</button>
+                  </div>
+             </div>
+
+              <div class="product">
+                <div>
+                    <img class="Vagetables2" src="./tomato.webp" alt="">
+                 </div>
+                  <div class="on-car-to-la">
+                    <span>Fresho <br> Tomato-Local(Loose)</span><br><br><br>
+                    <input list="weight" placeholder="1kg">
+                        <datalist id="Weight">
+                            <option value="1Kg">1Kg</option>
+                            <option value="2Kg">2Kg</option>
+                            <option value="3Kg">3kg</option>
+                        </datalist><br><br>
+                        <b>₹23.36</b><strike>₹32</strike><br><br><br><br>
+                        
+                        <button><i class='bx bx-bookmark'></i></button>
+                        <button style="color: red;width: 140px;">ADD</button>
+                  </div>
+             </div>
+
+              <div class="product">
+                <div>
+                    <img class="Vagetables2" src="./ladies finger.webp" alt="">
+                 </div>
+                  <div class="on-car-to-la">
+                    <span>Fresho <br> Laddies-Finger(Loose)</span><br><br><br>
+                    <input list="weight" placeholder="1kg">
+                        <datalist id="Weight">
+                            <option value="1Kg">1Kg</option>
+                            <option value="2Kg">2Kg</option>
+                            <option value="3Kg">3kg</option>
+                        </datalist><br><br>
+                        <b>₹34</b><strike>₹48</strike><br><br>
+                        <input list="" placeholder="Hr Din Sasta!">
+                        <datalist id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </datalist><br><br>
+                        <button><i class='bx bx-bookmark'></i></button>
+                        <button style="color: red;width: 140px;">ADD</button>
+                  </div>
+             </div>  
+                </div>
+        </div><br>
+        
+               <div id="seven-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Top Offers</b></span> 
+               </div>
+               <div  id="OFFER">
+               
+                <div><img class="Top-offer" src="./T-O1.webp" alt=""></div>
+                <div><img class="Top-offer" src="./T-O2.webp" alt=""></div>
+                <div><img class="Top-offer" src="./T-O3.webp" alt=""></div>
+                <div><img class="Top-offer" src="./T-O4.webp" alt=""></div>
+            </div>
+
+            <div id="eight-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Fruits & Vegetables</b></span> 
+               </div>
+               <div  id="fruits_vetetables">
+               
+                <div><img class="vg" src="./fv1.webp" alt=""></div>
+                <div><img class="vg" src="./fv2.webp" alt=""></div>
+                <div><img class="vg" src="./fv3.webp" alt=""></div>
+                <div><img class="vg" src="./fv4.webp" alt=""></div>
+            </div>
+
+
+            <div id="nine-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Your Daily Staples </b></span> 
+               </div>
+               <div  id="Your-daily">
+               
+                <div><img class="y-d" src="./ds1.webp" alt=""></div>
+                <div><img class="y-d" src="./ds2.webp" alt=""></div>
+                <div><img class="y-d" src="./ds3.webp" alt=""></div>
+                <div><img class="y-d" src="./ds4.webp" alt=""></div>
+                <div><img class="y-d" src="./ds5.webp" alt=""></div>
+                <div><img class="y-d" src="./ds6.webp" alt=""></div>
+            </div>
+
+             <div id="ten-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Beverages </b></span> 
+               </div>
+               <div  id="beverages">
+               
+                <div><img class="B" src="./B.webp" alt=""></div>
+                <div><img class="B" src="./B1.webp" alt=""></div>
+                <div><img class="B" src="./B2.webp" alt=""></div>
+                <div><img class="B" src="./B3.webp" alt=""></div>
+                <div><img class="B" src="./B4.webp" alt=""></div>
+                <div><img class="B" src="./B5.webp" alt=""></div>
+            </div>
+
+             <div id="eleven-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Snack Store</b></span> 
+               </div>
+               <div  id="snack">
+               
+                <div><img class="ss" src="./ss1.webp" alt=""></div>
+                <div><img class="ss" src="./ss2.webp" alt=""></div>
+                <div><img class="ss" src="./ss3.webp" alt=""></div>
+                <div><img class="ss" src="./ss4.webp" alt=""></div>
+            </div>
+
+            <div id="twelve-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Cleaning & Household</b></span> 
+               </div>
+               <div  id="cleaning">
+               
+                <div><img class="ch" src="./ch1.webp" alt=""></div>
+                <div><img class="ch" src="./ch2.webp" alt=""></div>
+                <div><img class="ch" src="./ch3.webp" alt=""></div>
+                <div><img class="ch" src="./ch4.webp" alt=""></div>
+            </div>
+
+            <div id="thirteen-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Beauty & Hygiene</b></span> 
+               </div>
+               <div  id="beauty">
+               
+                <div><img class="Bh" src="./bh.webp" alt=""></div>
+                <div><img class="Bh" src="./bh1.webp" alt=""></div>
+                <div><img class="Bh" src="./bh2.webp" alt=""></div>
+                <div><img class="Bh" src="./bh3.webp" alt=""></div>
+                <div><img class="Bh" src="./bh4.webp" alt=""></div>
+                <div><img class="Bh" src="./bh5.webp" alt=""></div>
+            </div>
+
+            <div id="fourteen-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Home & Kitchen Essentials</b></span> 
+               </div>
+               <div  id="Home">
+               
+                <div><img class="hk" src="./hk.webp" alt=""></div>
+                <div><img class="hk" src="./hk1.webp" alt=""></div>
+                <div><img class="hk" src="./hk2.webp" alt=""></div>
+                <div><img class="hk" src="./hk3.webp" alt=""></div>
+                <div><img class="hk" src="./hk4.webp" alt=""></div>
+                <div><img class="hk" src="./hk5.webp" alt=""></div>
+            </div>
+
+            <div id="fifteen-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Dairy & Vegan</b></span> 
+               </div>
+               <div  id="daily">
+               
+                <div><img class="dv" src="./dv.webp" alt=""></div>
+                <div><img class="dv" src="./dv1.webp" alt=""></div>
+                <div><img class="dv" src="./dv2.webp" alt=""></div>
+                <div><img class="dv" src="./dv3.webp" alt=""></div>
+            </div>
+
+            <div id="sixteen-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Bakery Store</b></span> 
+               </div>
+               <div  id="bakery">
+               
+                <div><img class="bs" src="./bs.webp" alt=""></div>
+                <div><img class="bs" src="./bs1.webp" alt=""></div>
+                <div><img class="bs" src="./bs2.webp" alt=""></div>
+                <div><img class="bs" src="./bs3.webp" alt=""></div>
+            </div>
+
+            <div id="seventeen-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Personal Care</b></span> 
+               </div>
+               <div  id="personal-care">
+               
+                <div><img class="pc" src="./pc.webp" alt=""></div>
+                <div><img class="pc" src="./pc1.webp" alt=""></div>
+                <div><img class="pc" src="./pc2.webp" alt=""></div>
+                <div><img class="pc" src="./pc3.webp" alt=""></div>
+            </div>
+
+             <div id="eighteen-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">The Gourmet Store</b></span> 
+               </div>
+               <div  id="store">
+               
+                <div><img class="gs" src="./g.webp" alt=""></div>
+                <div><img class="gs" src="./g1.webp" alt=""></div>
+                <div><img class="gs" src="./g2.webp" alt=""></div>
+                <div><img class="gs" src="./g3.webp" alt=""></div>
+            </div>
+
+            <div id="t-box">
+                <img id="tea" src="./T.webp" alt="">
+            </div>
+
+            <div id="ninteen-nav">
+                  <span><b style="margin-left: 10px; font-size: 30px;">Brand Store</b></span> 
+               </div>
+               <div  id="Brand">
+               
+                <div><img class="store" src="./brand.webp" alt=""></div>
+                <div><img class="store" src="./brand1.webp" alt=""></div>
+                <div><img class="store" src="./brand2.webp" alt=""></div>
+                <div><img class="store" src="./brand3.webp" alt=""></div>
+                <div><img class="store" src="./brand4.webp" alt=""></div>
+                <div><img class="store" src="./brand5.webp" alt=""></div>
+            </div>
+
+            <div>
+                <h1 style="margin-left: 1%;">bigbasket – online grocery store</h1><br>
+                <p id="mob-footer" style="margin-left: 1%;">Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains, dairy products <br>
+                    and hundreds of branded items could be handpicked and delivered to your home, all at the click of a button? India’s first comprehensive online megastore, <br>com, brings a whopping 20000+ products with more than 1000 brands, to over 6 million happy customers.
+                     From household cleaning products to beauty and makeup, bigbasket has everything you need for your daily needs. <br>  bigbasket.com is convenience personified.
+                     We have taken away all the stress associated with shopping for daily essentials, and you can now order all your household products and even buy groceries online without travelling long distances or standing in serpentine queues. <br> Add to this the convenience of finding all your requirements at one single source, along with great savings, and you will realise that bigbasket- India’s largest online supermarket, has revolutionised the way India shops for groceries. Online grocery shopping has never been <br>
+                      Need things fresh? Whether it’s fruits and vegetables or dairy and meat, we have this covered as well! Get fresh eggs, meat, fish and more online at your convenience.
+                     Hassle-free Home Delivery options We deliver to 25 cities across India and maintain excellent delivery times, ensuring that all your products from groceries to snacks branded foods reach you in time.
+                     Slotted Delivery: Pick the most convenient delivery slot to have your grocery delivered. From early morning delivery for early birds, to late-night delivery for people who work the late shift, bigbasket caters to every schedule
+                     Express Delivery: This super useful service can be availed by customers in cities like Bangalore, Mumbai, Pune, Chennai, Kolkata, Hyderabad and Delhi-NCR in which we deliver your orders to your doorstep in 90 Minutes
+                     BB Speciality stores: Missed out on buying that essential item from your favourite neighbourhood store for tonight’s party? We’ll deliver it for you! From bakery, sweets and meat to flowers and chocolates, we deliver your order in 90 minutes, through a special arrangement with a nearby speciality store, verified by us.
+                     Read more..
+                </p>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+             <div id="cloned">Cloned By - Juhi Singh</div>
+</main><br>
+
+<div id="mob-footer2" style=" background-color: black;">
+         <footer style="margin-left: 10%; margin-right: 10%;">
+        <div style="background-color: black; color: white;">
+                <div style="display: flex;">
+                    <div class="foot">Bigbasket <br>
+                       About Us   <br>
+                       In News    <br>
+                       Green bigbasket <br>
+                       Privacy Policy <br>
+                       Affiliate  <br>
+                       Terms and Conditions  <br>
+                       Careers At bigbasket  <br>
+                       bb Instant  <br>
+                       bb Daily  <br>
+                       bb Blog  <br>
+                       bbnow    <br>
+                   </div>
+                    <div  class="foot">
+                        Help <br>
+                        FAQs <br>
+                        Contact Us <br>
+                        bb Wallet FAQs <br>
+                        bb Wallet T&Cs  <br>
+                        Vendor Connect  <br>
+                    </div>
+                    <div  class="foot">
+                        <img src="./big.png" alt=""> <br>
+                        <img src="./big1.png" alt=""> 
+                        <img src="./big2.png" alt=""><br>
+                        <img src="./big3.png" alt=""><br>
+                        <p>Vendor Connect</p> <br>
+                        <img src="big4.png" alt=""> 
+                    </div>   
+                </div> <br><br>
+                ..................................................................................................................................................................................................................................................................................................... <br> <br> <br>
+
+                <div>
+                    <h2 align="center">Cities We Serve</h2>
+                    <p align="center">Dhamnod&nbsp;| &nbsp;Medinipur&nbsp;|&nbsp;Modasa&nbsp;|&nbsp;Gopalganj&nbsp;|&nbsp;Nainital&nbsp;|&nbsp;Pakyong&nbsp;|&nbsp;Shilong&nbsp;|&nbsp;Tawang&nbsp;|&nbsp;Paschim Bardhaman&nbsp;|&nbsp;PEDDAPALLI&nbsp;|&nbsp;Amreli&nbsp;|&nbsp;Narsinghpur&nbsp;|&nbsp; Howrah&nbsp;| &nbsp;Badnagar&nbsp;|&nbsp; <br>Deesa
+                    &nbsp;|&nbsp;Kozhikode&nbsp;|&nbsp;arangal Hanamkona&nbsp;|&nbsp;Pratapgarh District&nbsp;|&nbsp;Prakasam District&nbsp;|&nbsp;Kannauj&nbsp;|&nbsp;Farrukhabad&nbsp;|&nbsp;Ludhiana District&nbsp;|&nbsp;Chhibramau&nbsp;|&nbsp;Gonda District&nbsp;|&nbsp;Khargone&nbsp;|&nbsp; <br>
+                    Baghpat District&nbsp;|&nbsp;Amroha District&nbsp;|&nbsp;Mahabubnagar&nbsp;|&nbsp;Korba&nbsp;|&nbsp;Varanasi&nbsp;|&nbsp;Kanakapura&nbsp;|&nbsp;Khurai&nbsp;|&nbsp;Raisen&nbsp;|&nbsp;Gondia&nbsp;|&nbsp;Rahatgarh&nbsp;|&nbsp;Bhiwadi&nbsp;|&nbsp;Goa&nbsp;|&nbsp;Bahadurgarh&nbsp;|&nbsp;Raichur&nbsp; |&nbsp; <br>Sindudurg&nbsp;
+                    |&nbsp;Sangareddy&nbsp;|&nbsp;Kurnool&nbsp;|&nbsp;Jadcherla&nbsp;|&nbsp;Rupnagar&nbsp;|&nbsp;Faridkot&nbsp;|&nbsp;Shamli&nbsp;|&nbsp;Pench&nbsp;|&nbsp;Visakhapatnam District&nbsp;|&nbsp;Vellore&nbsp;|&nbsp;Thiruvananthapuram&nbsp;|&nbsp;Ujjain&nbsp;|&nbsp;Sikar&nbsp;|&nbsp;Nadia&nbsp;|&nbsp; <br>Bardoli&nbsp;|&nbsp;Bokaro&nbsp;|&nbsp;
+                    BACHHRAWAN &nbsp;|&nbsp;JAGDISHPURMachilipatnam &nbsp;|&nbsp;North 24 Parganas&nbsp;|&nbsp;Khambhat&nbsp;|&nbsp;Hubli&nbsp;|&nbsp;Hasanpur&nbsp;|&nbsp;Prakasam&nbsp;|&nbsp;Nalgonda&nbsp;|&nbsp;Karnal&nbsp;|&nbsp;Panipat&nbsp;| <br>&nbsp; Rohtak&nbsp;|&nbsp;Renigunta&nbsp;|&nbsp;Wani&nbsp;| &nbsp;Ghughu&nbsp;|&nbsp;
+                    ShrimadhopurChameliAmritsar&nbsp;|&nbsp;Mancherial&nbsp;|&nbsp;Jagtial&nbsp;|&nbsp;Chotila&nbsp;|&nbsp;Ramnagar&nbsp;|&nbsp;Bulandshahr&nbsp;|&nbsp;Nagarkurnool&nbsp;|&nbsp;Gadwal&nbsp;|&nbsp;Jahangirabad&nbsp;|&nbsp;Anupshahar&nbsp;|&nbsp;Gudur&nbsp;|&nbsp;Khatauli&nbsp;|&nbsp;Shahabad Markanda
+                    &nbsp;|&nbsp;Bhagpat&nbsp;|&nbsp;Srinagar&nbsp;|&nbsp;Shimla&nbsp;|&nbsp;Lakhisarai&nbsp;|&nbsp;Berachampa&nbsp;|&nbsp;Andaman and Nicobar&nbsp;|&nbsp;BilimoraHasnabad&nbsp;|&nbsp;SuratMuzaffarnagar District&nbsp;|&nbsp;Mysore&nbsp;|&nbsp;Bihta&nbsp;|&nbsp;Bhubaneswar Rural&nbsp;|&nbsp;Hyderabad&nbsp;
+                    |&nbsp;Kolkata&nbsp;|&nbsp;Chennai&nbsp;|&nbsp;Mumbai&nbsp;|&nbsp;Nashik&nbsp;|&nbsp;Bidhuna&nbsp;|&nbsp;Warud&nbsp;|&nbsp;Chandur BazarDhar&nbsp;|&nbsp;Hooghly District&nbsp;|&nbsp;Kalluru&nbsp;|&nbsp;Kalmeshwar&nbsp;|&nbsp;Morshi&nbsp;|&nbsp;PutturKhandwa&nbsp;|&nbsp;Bhandara&nbsp;|&nbsp;Ganj Basoda&nbsp;|&nbsp;Bhavnagar&nbsp;
+                    |&nbsp;Dhenkanal&nbsp;|&nbsp;Srikalahasti&nbsp;|&nbsp;Fatehgarh Sahib District&nbsp;|&nbsp;Lakhimpur&nbsp;|&nbsp;Bangarmau&nbsp;|&nbsp;Palani&nbsp;|&nbsp;Songadh&nbsp;|&nbsp;Pehowa&nbsp;|&nbsp;Vyara&nbsp;|&nbsp;Yavatmal&nbsp;|&nbsp;Dholka&nbsp;|&nbsp;Kheda&nbsp;|&nbsp;Wardha&nbsp;|&nbsp;Ukhra&nbsp;|&nbsp;Udaipura&nbsp;|&nbsp;Gadarwara&nbsp;
+                    |&nbsp;Jaora&nbsp;|&nbsp;Nagda&nbsp;|&nbsp;Ratlam&nbsp;|&nbsp;Nadiad&nbsp;|&nbsp;Palanpur&nbsp;|&nbsp;Bhopal&nbsp;|&nbsp;Jaipur&nbsp;|&nbsp;Ahmedabad-Gandhinagar&nbsp;|&nbsp;Noida-Ghaziabad&nbsp;|&nbsp;Meerut&nbsp;|&nbsp;Vizianagaram&nbsp;|&nbsp;Medak DistrictEast Godavari District&nbsp;|&nbsp;Nizamabad District&nbsp;
+                    |&nbsp;Kamareddy District&nbsp;|&nbsp;Lucknow Rural&nbsp;|&nbsp;Noida Rural&nbsp;|&nbsp;Chennai Rural&nbsp;|&nbsp;Tirupattur&nbsp;|&nbsp;Hyderabad Rural&nbsp;|&nbsp;Bangalore Rural&nbsp;|&nbsp;Lada&nbsp;|&nbsp;Ranebennur&nbsp;|&nbsp;Bagepalli&nbsp;|&nbsp;Chintamani&nbsp;|&nbsp;Ambur&nbsp;|&nbsp;Channapatna&nbsp;|&nbsp;
+                     Maddur&nbsp;|&nbsp;Nabadwip&nbsp;|&nbsp;Katwa&nbsp;|&nbsp;Kharagpur&nbsp;|&nbsp;Tarakeswar&nbsp;|&nbsp;Kothagudem&nbsp;|&nbsp;Ramanagara&nbsp;|&nbsp;Rampur&nbsp;|&nbsp;Valsad&nbsp;|&nbsp;Samastipur&nbsp;|&nbsp;Jabalpur&nbsp;|&nbsp;Wanaparthy&nbsp;|&nbsp;Miryalaguda&nbsp;|&nbsp;Balasore&nbsp;|&nbsp;Kuchaman City&nbsp;|&nbsp;Sausar&nbsp;|&nbsp;
+                    Hardwar&nbsp;|&nbsp;Suryapet District&nbsp;|&nbsp;Bhadrak District&nbsp;|&nbsp;Konaseema District&nbsp;|&nbsp;Raebareli District&nbsp;|&nbsp;Siwan&nbsp;|&nbsp;Siddhpur&nbsp;|&nbsp;Haryana&nbsp;|&nbsp;West Godavari District&nbsp;|&nbsp;VikarabadHaldia&nbsp;|&nbsp;Kanthi&nbsp;|&nbsp;ahegam
+                    &nbsp;|&nbsp;Cuttack&nbsp;|&nbsp;Jangaon&nbsp;|&nbsp;Dindigul&nbsp;|&nbsp;Sihor&nbsp;|&nbsp;Dudu&nbsp;|&nbsp;Jagatsinghpur&nbsp;|&nbsp;Udumalaipetta&nbsp;|&nbsp;Pollachi&nbsp;|&nbsp;Vijapur&nbsp;|&nbsp;Dharapuram&nbsp;|&nbsp;Canning&nbsp;|&nbsp;Tiptur&nbsp;|&nbsp;Mehmedabad&nbsp;|&nbsp;Fatehpur&nbsp;|&nbsp;Krishnarajpet&nbsp;|&nbsp;Fatehgarh&nbsp;|&nbsp;Srrangapatna
+                    Arsikere&nbsp;|&nbsp;Karur&nbsp;|&nbsp;Gobichettipalayam&nbsp;|&nbsp;Seoni&nbsp;|&nbsp;Daryapur Banosa&nbsp;|&nbsp;Chaklasi&nbsp;|&nbsp;Thanesar&nbsp;|&nbsp;Muzaffarpur&nbsp;|&nbsp;Punjab&nbsp;|&nbsp;Barabanki District&nbsp;|&nbsp;Jalandhar&nbsp;|&nbsp;Indor&nbsp;|&nbsp;Mhow&nbsp;|&nbsp;Pithampur&nbsp;|&nbsp;Ludhiana&nbsp;|&nbsp;Tuni
+                    &nbsp;|&nbsp;Hapur&nbsp;|&nbsp;Chandigarh Tricity&nbsp;|&nbsp;East-Godavari-2&nbsp;|&nbsp;Chittoor District&nbsp;|&nbsp;Tiruvallur District&nbsp;|&nbsp;Bidar District&nbsp;|&nbsp;Sangareddy District&nbsp;|&nbsp;Ayodhya District&nbsp;|&nbsp;Guwahati Rural&nbsp;|&nbsp;Channarayapattana
+                    &nbsp;|&nbsp;Saoner&nbsp;|&nbsp;Madanapalli&nbsp;|&nbsp;Tirupati&nbsp;|&nbsp;Memari&nbsp;|&nbsp;Bolpur&nbsp;|&nbsp;Kalwakurthy&nbsp;|&nbsp;Coimbatore Rural&nbsp;|&nbsp;Hajipur&nbsp;|&nbsp;Kadapa&nbsp;|&nbsp;Bangaon&nbsp;|&nbsp;Habra&nbsp;|&nbsp;Tamluk&nbsp;|&nbsp;Basirhat&nbsp;|&nbsp;Barakar&nbsp;|&nbsp;ChittaranjanGohana&nbsp;|&nbsp;Bhadra&nbsp;|&nbsp;
+                    Nagpur&nbsp;|&nbsp;Kochi&nbsp;|&nbsp;Pala Palamaner&nbsp;|&nbsp;Gursahaiganj&nbsp;|&nbsp;Sultanpur District&nbsp;|&nbsp;Kolkata Rural&nbsp;|&nbsp;ALNAVAR&nbsp;|&nbsp;Umreth&nbsp;|&nbsp;Tripura&nbsp;|&nbsp;Puri&nbsp;|&nbsp;Kittur&nbsp;|&nbsp;Motebeennura&nbsp;|&nbsp;Haveri&nbsp;|&nbsp;Kalghatgi&nbsp;|&nbsp;Hangal&nbsp;|&nbsp;Harihara&nbsp;|&nbsp;
+                    Gadag&nbsp;|&nbsp;Haliyal&nbsp;|&nbsp;Akola&nbsp;|&nbsp;Katol&nbsp;|&nbsp;Lunawada&nbsp;|&nbsp;Godhra&nbsp;|&nbsp;Purba Bardhaman&nbsp;|&nbsp;Karimnagar&nbsp;|&nbsp;Mathura&nbsp;|&nbsp;Hathras&nbsp;|&nbsp;Nagpur Rural&nbsp;|&nbsp;Patna Rural&nbsp;|&nbsp;Mumbai Rural&nbsp;|&nbsp;Mysore Rural&nbsp;|&nbsp;Vadodara Rural&nbsp;|&nbsp;
+                    |&nbsp;Khergam&nbsp;|&nbsp;Masrakh&nbsp;|&nbsp;Bakhtiarpur&nbsp;|&nbsp;Hassan&nbsp;|&nbsp;Arambag&nbsp;|&nbsp;Amethi District&nbsp;|&nbsp;Soro&nbsp;|&nbsp;Shadnagar&nbsp;|&nbsp;Bhongir&nbsp;|&nbsp;Kazipet&nbsp;|&nbsp;Kishangarh&nbsp;|&nbsp;Nasirabad&nbsp;|&nbsp;Jammu Kashmir&nbsp;|&nbsp;Katihar&nbsp;|&nbsp;Ramtek&nbsp;|&nbsp;Moradabad&nbsp;|&nbsp;
+                    Sahjahanpur&nbsp;|&nbsp;Ajmer&nbsp;|&nbsp;Kottayam&nbsp;|&nbsp;Rajamahendravaram&nbsp;|&nbsp;Kakinada&nbsp;|&nbsp;Kundli&nbsp;|&nbsp;Sahibganj&nbsp;|&nbsp;GudiyathamDehraDun&nbsp;|&nbsp;kolar&nbsp;|&nbsp;Vaidpura&nbsp;|&nbsp;Saharanpur District&nbsp;|&nbsp;Aligarh&nbsp;|&nbsp;Pune Rural&nbsp;|&nbsp;Sonipat&nbsp;|&nbsp;
+                    Sicilla District&nbsp;|&nbsp;Vizag Rural&nbsp;|&nbsp;South 24 Parganas District&nbsp;|&nbsp;Pandua&nbsp;|&nbsp;Koppal&nbsp;|&nbsp;Jamuria&nbsp;|&nbsp;Khairabad&nbsp;|&nbsp;Saran&nbsp;|&nbsp;Amalapuram&nbsp;|&nbsp;Addanki&nbsp;|&nbsp;Amravati&nbsp;|&nbsp;Jamshedpur&nbsp;|&nbsp;Kolhapur&nbsp;|&nbsp;Kalaburagi&nbsp;|&nbsp;
+                     Guwhati|Bhubaneshwar-Cuttack|Surat Rural|Naharlagun|Mandsaur|Shiggaon|Savadatti|Sullurupeta|Makrana|Khammam|Raipur|Sambhal District|Warora|Godda|Tiruppur
+                     |Dhandhuka|Sasaram|Bareja|Pardi|Nayagarh|Ladwa|Garkha|Venkatgiri|Naidupeta|Malmaliya|Puducherr|Sitamarhi|Udham-Singh-Nagar|Nellore|Ambala|Agra|Madurai|Keri
+                    Gulbaraga|Sambalpur|Jharsuguda|Faridabad|Dumraon|Rourkela|Siddipet District|Malur|Hardoi|Darbhanga|GayaMotihar|Angul|Chhindwara|Jagraon|Bassi|Hindaun|
+                    Ganjam|Karauli|Dausa|Himachal Pradesh|Gangapur City|ThiruttaniVidishaKendrapara|Aligarh DistricChandrapuLalsot|Patiala|Trichy|Navsari|Hoshangabad|Patan|
+                    Sathupally|Unjha|Robertsonpet|Kalol|Kadi|Himatnagar|Mehsana|Amaravathi|Gwalior|Rajkot|Allahabad|Bareilly|Jodhpur|Palakkad|Palwal|Kalinga Nagar|Wyra|Nagari
+             </p>
+                </div> <br> <br>
+                ...................................................................................................................................................................................................................................................................................................
+                 <br><br><br><br>
+                
+                
+                <div style="display: flex;">
+                    <div class="foot1">Popular <br>
+                         Sunflower Oils <br>
+                         Milk <br>
+                         Organic F&V <br>
+                         Floor Cleaners <br>
+                         Frozen Veg Food   <br>                     
+
+                    </div>
+                    <div class="foot1">
+                        Wheat Atta <br>
+                        Health Drinks <br>
+                        Namkeen <br>
+                        Other Juices <br>
+                        Diapers & Wipes <br>
+                    </div>
+                    <div class="foot1">
+                        Ghee <br>
+                        Flakes <br>
+                        Eggs <br>
+                        Leafy Vegetables <br>
+                    </div>
+                    <div class="foot1">
+                        Popular Brands <br>
+                        Amul <br>
+                        RED BULL <br>
+                        Yummiez <br>
+                        Britannia <br>
+                        Haldirams <br>
+                    </div>
+                    <div class="foot1">
+                        Nescafe <br>
+                        elite cake <br>
+                        Yera <br>
+                        Wow Momo <br>
+                        Ferrero <br>
+                    </div>
+                    <div class="foot1">
+                        MTR <br>
+                        Pediasure <br>
+                        Yakult <br>
+                        Fortune <br>
+                        Lays <br>  
+                    </div>
+                </div> <br><br>
+                <a style="color: white; margin: 45%;" href=""> Show more +</a> <br> <br> <br> <br> <br>
+                <div>Copyright © 2022-2024 Supermarket Grocery Supplies Pvt Ltd</div>
+        </div>
+       
+         </footer> 
+          
+    <!-- </main>
+    <br><br><br><br><br><br><br> -->
+</body>
+</html>
